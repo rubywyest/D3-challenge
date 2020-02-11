@@ -36,16 +36,7 @@ d3.csv("assets/data/data.csv").then(function(healthData) {
       data.abbr = data.abbr;
       data.income = +data.income;
     });
-    healthData2 = [];
-    var test = 'Y';
-    healthData.forEach(function(data) {
-      if (test == 'Y') {
-        healthData2.push(data);  
-        test = 'N'
-      } else {
-        test = 'Y'
-      }
-    });
+
 
     // Step 2: Create scale functions
     // ==============================
