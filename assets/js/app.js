@@ -36,7 +36,7 @@ d3.csv("assets/data/data.csv").then(function(healthData) {
       data.abbr = data.abbr;
       data.income = +data.income;
     });
-
+    console.log("hello", healthData);
 
     // Step 2: Create scale functions
     // ==============================
@@ -90,7 +90,6 @@ d3.csv("assets/data/data.csv").then(function(healthData) {
       .attr("fill", "black");
  
     console.log("Step 1", healthData);
-    console.log("Step 1", healthData2);
     
     // Step 6: Initialize tool tip
     // ==============================
